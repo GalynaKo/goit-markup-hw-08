@@ -1,0 +1,29 @@
+.description__img {
+    position: relative;
+
+    display: block;
+      min-width: 100%;
+      height: auto;
+}
+
+.description__text {
+    width: 370px;
+    color: #ffffff;
+    bottom: 0;
+
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: #2F303ACC;
+
+}
+.description{
+    padding-top: 0;
+   
+    @media screen and(max-width:1199px) {
+        display: none;
+    }  
+  @media screen and(min-width:1200px) {
+    display: block;
+  }  
+}

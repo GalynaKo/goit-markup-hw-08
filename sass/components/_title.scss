@@ -1,0 +1,15 @@
+.title{
+        color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42/36);
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+       justify-content: center;
+        letter-spacing: 0.03em;
+
+        @media screen {
+        font-size: 28px;
+        }
+}

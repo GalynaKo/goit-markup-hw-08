@@ -1,0 +1,334 @@
+.backdrop {
+    transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    
+    @media screen and(max-width:767px){
+        padding: 94px 15px;
+        overflow-y: scroll;
+    }
+       /* @media screen and(min-width:768px) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }*/
+        @media screen and(max-width:1199px) {
+            padding: 207px 159px;
+        }    
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50% -50%) scale(0) rotate(0deg);
+}
+
+.modal {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 528px;
+    min-height: 581px;
+    padding: 0px 40px 40px 40px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    margin-left: 100%;
+    margin-top: 8px;
+    margin-right: 8px;
+    bottom: 2px;
+
+    
+}
+
+.modal-btn {
+    position: relative;
+
+}
+
+
+.modal-x {
+    position: absolute;
+
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-btn:hover .modal-x,
+.modal-btn:focus .modal-x {
+
+    fill: var(--accent-color);
+}
+
+.is-hidden {
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+.form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.form.input:focus+.form-label {
+    color: #2196F3;
+}
+
+
+.form-input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: red;
+}
+
+.form-input:not(:focus):not(:placeholder-shown):valid {
+    background-color: white;
+}
+
+.form-group {
+    /* outline: 1px solid #2196F3;*/
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.form-group-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+
+    /* margin-top: 40px;*/
+    color: #212121;
+}
+
+.form-label {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+
+}
+
+.form-group input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 42px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+
+}
+
+
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon:focus .action-icon {
+    fill: var(--accent-color);
+}
+
+.action-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #212121;
+
+
+}
+
+.form-input {
+    padding: 42px;
+    /* transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+}
+
+.form-input:focus {
+    border-color: #2196F3;
+    outline: none;
+}
+
+.form-input:focus+.action-icon {
+    fill: #2196F3;
+}
+
+.form-textarea {
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 12px;
+    padding-left: 16px;
+    color: rgba(117, 117, 117, 0.5),
+        rgba(117, 117, 117, 0.5);
+}
+
+.form-group textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.01em;
+}
+
+.form-check-text {
+    transition-property: backgroind-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-check-text {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.form-check-text span {
+
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.check-icon {
+    fill: transparent
+}
+
+.form-check:checked+.form-check-text span {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.form-check:focus+.form-check-text span {
+    border-color: var(--accent-color);
+}
+
+.form-check:checked+.form-check-text .check-icon {
+    fill: #ffffff;
+}
+
+
+
+/*.form-check-text::before{
+    content: '';
+    width: 16px;
+    height: 15px;
+    border:2px solid #212121 ;
+    border-radius: 2px;
+    margin-right: 8px;
+
+}
+.form-check:checked +.form-check-text::before{
+    background-color: var(--accent-color);
+    border: none;
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
+
+.check-text {
+    color: var(--accent-color);
+
+}
+
+
+
+
+.checkbox-btn {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+    font-style: normal;
+    font-weight: 700;
+    
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    background: #2196F3;
+    
+
+}
+

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebStudio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/stylees.css"/>
+        <link rel="stylesheet" href="./css/main.min.css" />
+      
+    </head>
+    <animate__animated animate__bounce*>
+    <body>
+        <header class="header header-container">
+            <div class="container">
+                <nav class="header__navigation">
+                    <a href="./index.html" class="logo link">
+                        <span class="logo__title link"> Web</span>Studio
+                    </a>
+                    <ul class="list header__navigation">
+                        <li> <a class="link header__link" href="./index.html">Студия</a> </li>
+                        <li> <a class="link header__link header__current" href="./portfolio.html">Портфолио </a> </li>
+                        <li> <a class="link header__link" href="">Контакты</a> </li>
+                    </ul>
+                </nav>
+                <div class="header__connect">
+                    <ul class="list header__navigation">
+                        <li class="">
+                            
+                            
+                            
+                            <a class="link header__contact" href="">
+                                <svg class="header__icon" width="16" height="12">
+                                 <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                                </svg>info@devstudio.com
+                            </a> 
+                        </li>
+                        <li class="">
+                           
+                             <a class="link header__contact header-tel" href="tel:+380961111111">
+                                <svg class="header__icon" width="10" height="16">
+                                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                              </svg>
+                             +38 096 111 11 11
+                          </a>
+                       </li>
+                    
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+       </header>
+        <main>
+            <section class="showcase link">
+                <div class="container">
+                    <h1 class="visually-hidden">Фильтр</h1>
+                    <ul class=" list showcase__menu">
+                        <li><button type="button" class="showcase__btn btn">Все</button></li>
+                        <li><button type="button" class="showcase__btn btn">Веб-сайты</button> </li>
+                        <li><button type="button" class="showcase__btn btn">Приложения</button></li>
+                        <li><button type="button" class="showcase__btn btn">Дизайн</button></li>
+                        <li><button type="button" class="showcase__btn btn">Маркетинг</button> </li>
+                    </ul>
+                    
+                    
+                    <ul class="showcase__list list">
+                        <li class="showcase__product">
+                            <div class="showcase__img">
+                                <img srcset="
+                                ./images/portfolio-desk-1.jpg 1x,
+                                ./images/img-2-2x-min.jpg 2x"
+                                
+                               
+                                src="./images/portfolio-desk-1.jpg"
+                                 alt="открытая страница"
+                                  width="370" />
+                                <p class="showcase__instruction">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+
+                            <div class="showcase__item">
+                                <h2 class="showcase__title">Технокряк</h2>
+                                <p class="showcase__text">Веб-сайт</p>
+                            </div>
+
+                            
+                    
+                        </li>
+                        <li class="showcase__product">
+                            <div class="showcase__img">
+                                <img src="./images/portfolio2.jpg" alt="один забирает боскатбльный мячь у другого" width="370" />
+                              <p class="showcase__instruction">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>  
+                            </div>
+                            
+                            <div class="showcase__item">
+                                <h2 class="showcase__title">Постер <span>New Orlean vs Golden Star</span> </h2>
+                                <p class="showcase__text">Дизайн</p>
+                            </div>
+                            
+                    
+                    
+                        </li>
+                        <li class="showcase__product">
+                            <div class="showcase__img">
+                                <img src="./images/portfolio3.jpg" alt="приложение рнсторана" width="370" />
+                              <p class="showcase__instruction">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>  
+                            </div>
+                            
+                            <div class="showcase__item">
+                                <h2 class="showcase__title">Ресторан <span>Seafood</span></h2>
+                                <p class="showcase__text">Приложение</p>
+                            </div>
+                            
+                    
+                        </li>
+                        <li class="showcase__product">
+                            <div class="showcase__img">
+                                <img src="./images/portfolio4.jpg" alt="Проект приватный" width="370" />
+                             <p class="showcase__instruction">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>   
+                            </div>
+                            
+                            <div class="showcase__item">
+                                <h2 class="showcase__title">Проект <span>Prime</span></h2>
+                                <p class="showcase__text">Маркетинг</p>
+                            </div>
+                            
+                    
+                    
+                        </li>
+                        <li class="showcase__product">
+                            <div class="showcase__img">
+                                <img src="./images/portfolio5.jpg" alt="Проект коробка" width="370">
+                               <p class="showcase__instruction">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p> 
+                            </div>
+                            
+                            <div class="showcase__item">
+                                <h2 class="showcase__title">Проект <span>Boxes</span></h2>
+                                <p class="showcase__text">Приложение</p>
+                            </div>
+                            
+                    
+                        </li>
+                        <li class="showcase__product">
+                            <div class="showcase__img">
+                                <img src="./images/portfolio6.jpg" alt="экран с открытым сайт" width="370" />
+                              <p class="showcase__instruction">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>  
+                            </div>
+                            
+                            <div class="showcase__item">
+                                <h2 class="showcase__title"> <span>Inspiration has no Borders</span></h2>
+                                <p class="showcase__text">Веб-сайт</p>
+                            </div>
+                            
+                    
+                        </li>
+                        <li class="showcase__product">
+                            <div class="showcase__img">
+                                <img src="./images/portfolio7.jpg" alt="раскрытый журнал" width="370" />
+                              <p class="showcase__instruction">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>  
+                            </div>
+                            
+                            <div class="showcase__item">
+                                <h2 class="showcase__title">Издание <span>Limited Edition</span></h2>
+                                <p class="showcase__text">Дизайн</p>
+                            </div>
+                            
+                    
+                        </li>
+                        <li class="showcase__product">
+                            <div class="showcase__img">
+                                <img src="./images/portfolio8.jpg" alt="этикетка" width="370" />
+                              <p class="showcase__instruction">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>  
+                            </div>
+                            
+                            <div class="showcase__item">
+                                <h2 class="showcase__title">Проект <span>LAB</span></h2>
+                                <p class="showcase__text">Маркетинг</p>
+                            </div>
+                            
+                    
+                    
+                        </li>
+                        <li class="showcase__product">
+                            <div class="showcase__img">
+                                <img src="./images/portfolio9.jpg" alt="страница для входа" width="370" />
+                              <p class="showcase__instruction">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                    позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>  
+                            </div>
+                           
+                            <div class="showcase__item">
+                                <h2 class="showcase__title"><span>Growing Business</span></h2>
+                                <p class="showcase__text">Приложение</p>
+                            </div>
+                            
+                    
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+    
+       
+     
+
+
+
+        </main>
+                       <!-- <footer class="footer ">
+                            <div class="container">
+                                <div class="address ">
+                                    <a href="" class="logo link footer__logo"> <span class="logo__title">Web</span>Studio </a>
+                        
+                                    <address>
+                                        <ul class="address__list ">
+                                            <li class="address__item">
+                                                <a href="" class="address__link address__link--color link ">г. Киев, пр-т Леси Украинки, 26</a>
+                                            </li>
+                                            <li class="address__item">
+                                                <a href="" class="address__link link "> info@example.com</a>
+                                            </li>
+                                            <li class="address__item">
+                                                <a href="tel:+380991111111" class="address__link link ">+38 099 111 11 11</a>
+                                            </li>
+                                        </ul>
+                                    </address>
+                                </div>
+                                <div class="join">
+                        
+                                    <h3 class="join-title pre-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                                    <ul class="join-soc list">
+                        
+                                        <li class="join-soc-item">
+                                            <a href="" class="join-soc-link social link">
+                                                <svg class="join-soc-icon" width="20" height="20">
+                                                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                        
+                                        <li class="join-soc-item">
+                                            <a href="" class="join-soc-link social link">
+                                                <svg class="join-soc-icon" width="20" height="20">
+                                                    <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                        
+                                        <li class="join-soc-item">
+                                            <a href="" class="join-soc-link social link">
+                                                <svg class="join-soc-icon" width="20" height="20">
+                                                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                                                </svg>
+                        
+                                            </a>
+                                        </li>
+                        
+                                        <li class="join-soc-item">
+                                            <a href="" class="join-soc-link social link">
+                                                <svg class="join-soc-icon" width="20" height="20">
+                                                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                                                </svg>
+                        
+                                            </a>
+                                        </li>
+                        
+                                    </ul>
+                        
+                                </div>
+                                <div class="join-action-form">
+                                    <h3 class="join-action-title pre-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+                        
+                        
+                                    <form class="join-action">
+                        
+                                        <label for="email"></label>
+                                        <input class="join-action-input" type="email" name="E-mail" placeholder="E-mail" id="email" />
+                        
+                                        <button class="join-action-btn btn" type="submit">Подписаться
+                                            <svg class="action-icon-btn" width="24" height="24">
+                                                <use href="./images/symbol-defs.svg#icon-aereo"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                        
+                        
+                        
+                        
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        
+                        
+                        
+                        </footer>-->
+
+        
+        </body>
+
+
+
+
+
+
+
+</html>

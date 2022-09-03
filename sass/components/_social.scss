@@ -1,0 +1,28 @@
+.social{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.join-soc-link {
+
+    background: rgba(255, 255, 255, 0.1);
+
+
+}
+
+.join-soc-link:focus,
+.join-soc-link:hover {
+    background-color: var(--accent-color);
+}
+
+.join-soc-icon {
+    fill: #ffffff;
+
+}
