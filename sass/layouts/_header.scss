@@ -47,6 +47,9 @@ header>.container {
         overflow: auto;
 
     }
+  @media screen and(min-width:768px) {
+      display: none;
+  }
 }
 .menu-clous{
     display: block;
@@ -215,7 +218,8 @@ header>.container {
 .header__connect {
     margin-left: auto;
     align-items: center;
-    display: none;
+   
+    
 }
 
 /*.navigation .logo{
@@ -294,5 +298,7 @@ header>.container {
 
 .header__icon {
     margin-right: 10px;
-    fill: #757575
+    fill: #757575;
+    
+   
 }
