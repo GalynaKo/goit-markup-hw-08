@@ -189,11 +189,9 @@ header > .container {
 }
 @media screen and (max-width: 767px) {
   .mob-menu {
-    position: absolute;
-    top: 100%;
+    /*position: absolute;*/
     left: auto;
     right: auto;
-    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -242,8 +240,16 @@ header > .container {
   line-height: 1.1764705882;
   /* identical to box height */
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
   color: #2196F3;
   margin-bottom: 64px;
+}
+
+.mob__soc {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .mob__soc__link {
@@ -256,12 +262,17 @@ header > .container {
   color: #2196F3;
 }
 
-.mob__soc-item::before {
-  content: "";
-  width: 0;
-  height: 22px;
-  position: absolute;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+.mob__soc-item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob__soc-item:not(:last-child) {
+  /* content: '';
+   width: 0;
+   height: 22px;
+   position: absolute;*/
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .menu {
