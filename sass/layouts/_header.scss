@@ -43,6 +43,9 @@ header>.container {
     height: 100vw;
     background-color: #ffffff;
     top: 0;
+    transition-duration: 250ms;
+        
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /*padding-top: 48px;
     padding-bottom: 48px;*/
     > .container{
