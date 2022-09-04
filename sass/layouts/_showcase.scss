@@ -102,6 +102,10 @@
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     width: 100%;
+    @media screen and(min-width768){
+        width: calc((100% - 30px) / 2);
+    }
+    
 }
 .showcase__product{
 width: 100%;

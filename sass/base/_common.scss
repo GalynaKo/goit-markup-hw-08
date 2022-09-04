@@ -28,11 +28,14 @@ section{
     @media screen and (min-width:768px) {
      display: flex;
      /*width: 354px;*/
+     flex-wrap: wrap;
     }
 
          @media screen and (min-width:1200px) {
-             display: flex;
+             
              flex-basis: 0;
+             flex-wrap: nowrap;
+
          }
 }
 
