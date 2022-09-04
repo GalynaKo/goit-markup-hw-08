@@ -62,14 +62,7 @@
 
     width: 100%;
   }
-  @media screen and(min-width:768px) {
-
-      width: calc((100% - 30px) / 2 );
-  }
-   @media screen and(min-width:1200px) {
-
-       width: calc((100% - 30px) / 3);
-   }
+  
 }
 
 .showcase__img {
@@ -141,7 +134,18 @@
     
 }
 .showcase__product{
-width: 100%;
+  width: 100%;
+
+  @media screen and(min-width:768px) {
+
+        width: calc((100% - 2 * 30px) / 2);
+    }
+
+    @media screen and(min-width:1200px) {
+
+        width: calc((100% - 3 * 30px) / 3);
+    }
+
 }
 
 .showcase__title {

@@ -8,8 +8,14 @@ header>.container {
     display: flex;
     align-items: center;
     /*выравнивание на один уровень*/
-   position: relative;
+   /*position: relative;*/
 
+}
+.header-container{
+    @media screen  and( max-width:767px){
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 .header__navigation {
@@ -47,9 +53,20 @@ header>.container {
         overflow: auto;
 
     }
+        @media screen and(max-width:767px) {
+           position: absolute;
+           top: 100%;
+           left: auto;
+           right: auto;
+           width: 100%;
+
+        }
   @media screen and(min-width:768px) {
       display: none;
   }
+}
+.menu-container{
+display: block;
 }
 .menu-clous{
     display: block;
@@ -124,10 +141,10 @@ header>.container {
 /**.menu.menu-icon_cross{
     display: none;
 }
-.menu.is-open .menu-icon_cross{
+.mob-menu.is-open .menu-icon_cross{
     display: block;
 }
-.menu.is-open .menu-icon_menu {
+.mob-menu.is-open .menu-icon_menu {
     display: none;
 }
 
@@ -219,7 +236,17 @@ header>.container {
     margin-left: auto;
     align-items: center;
    
-    
+  @media screen and (min-width: 768px) 
+  and (min-width: 1200px)  {
+        
+        display: flex;
+        gap: 50px;
+        margin-left: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        
+        flex-direction: row;
+    }
 }
 
 /*.navigation .logo{

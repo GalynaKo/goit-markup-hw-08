@@ -26,9 +26,7 @@
                <span class="logo__title"> Web</span>Studio
             </a>
             <nav class="header__navigation">
-               <a href="./index.html" class="logo link">
-                  <span class="logo__title"> Web</span>Studio
-               </a>
+              
               
                <ul class="list header__navigation">
                                  <li> <a class="link header__link header__current" href="./index.html">
@@ -62,28 +60,30 @@
                                  
                                  </ul>
                               </div>
+                              <button type="button" class=" menu-open js-open-menu" aria-controls="menu-container" data-menu-button>
+                                 <svg width="40" height="40" aria-label=" Переключатель мобильного меню">
+                              
+                                    <use class="menu-icon_menu " href="./images/symbol-defs.svg#icon-menu">_</use>
+                                 </svg>
+                              </button>
                      
 
              </div>
+             
                
-            <button 
-              type="button"
-             class=" menu-open .js-open-menu"
-             aria-expanded="false" 
-             aria-controls="menu-container" 
-             data-menu-button>
-              <svg width="40" height="40" aria-label=" Переключатель мобильного меню">
-                 
-                 <use class="menu-icon_menu " href="./images/symbol-defs.svg#icon-menu">_</use>
-              </svg>
-            </button>
+           
 
          </div>
 
-        <div class="mob-menu">
-          <div class="container .js-menu-container">
+        <div class="mob-menu  js-menu-container">
+          <div class="container ">
              <div class="mob-menu-top">
-                     <button type="button" class=" menu-clous .js-close-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                     <button 
+                      type="button" 
+                      class=" menu-clous js-close-menu" 
+                      aria-expanded="false" 
+                      aria-controls="menu-container" 
+                      data-menu-button>
                         <svg width="40" height="40" aria-label=" Переключатель мобильного меню">
                            <use class="menu-icon_cross" href="./images/symbol-defs.svg#icon-close-x">
                            </use>
@@ -857,7 +857,7 @@
                   </div>
 
                   <script src="./js/modal.js"></script>
-                  <script src="./js/mobile-menu.js"></script>
+                  <script src="./js/menu.js"></script>
                   <script>
                      (() => {
                         document
