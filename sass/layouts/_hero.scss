@@ -7,12 +7,12 @@
         background-position: center;
         background-size: cover;
         background-image: linear-gradient 
-          (rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)),
-          url(../images/bg-mobile-min.jpg),
+           (rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+           url(../images/bg-mobile-min.jpg),
             url(../images/bg-mobile2x-min.jpg);
 
-          @media(min-device-pixel-radio: 2),
+           @media(min-device-pixel-radio: 2),
             (min-resolution:192dpi),
             (min-resolution: 2dppx) {
             background-image: linear-gradient
@@ -34,8 +34,8 @@
               background-image: linear-gradient 
               (rgba(47, 48, 58, 0.4),
              rgba(47, 48, 58, 0.4)),
-             url(../images/bg-desktop@2x-min.jpg)
-             url(../images/bg-hero.jpg);
+            url(../images/bg-tablet2x-min.jpg),
+              url(../images/bg-tablet-min.jpg);
                 }
         }
         @media screen and(min-width:1200px){

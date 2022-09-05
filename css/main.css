@@ -203,8 +203,8 @@ header > .container {
 .mob-menu {
   position: fixed;
   z-index: 2;
-  width: 100vw;
-  height: 100vw;
+  width: 100% vw;
+  height: 100% vh;
   background-color: #ffffff;
   top: 0;
   /*padding-top: 48px;
@@ -549,7 +549,7 @@ header > .container {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-radio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/bg-desktop@2x-min.jpg) url(../images/bg-hero.jpg);
+    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/bg-tablet2x-min.jpg), url(../images/bg-tablet-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1317,10 +1317,10 @@ header > .container {
 @media screen and (max-width: 767px) {
   .backdrop {
     padding: 94px 15px;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .backdrop {
     padding: 207px 159px;
   }
