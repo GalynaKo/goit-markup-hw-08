@@ -18,8 +18,14 @@ body {
     margin: 0;
 }
 section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+
+    @media screen and(mшт-widht:1200px){
     padding-top: 94px;
-    padding-bottom: 94px
+    padding-bottom: 94px;
+    }
     
 }
 .work-list {

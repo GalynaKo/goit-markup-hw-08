@@ -9,7 +9,7 @@
        justify-content: center;
         letter-spacing: 0.03em;
 
-        @media screen {
+        @media screen and (max-width:767px){
         font-size: 28px;
         }
 }

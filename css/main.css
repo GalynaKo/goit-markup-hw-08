@@ -53,8 +53,14 @@ body {
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (mшт-widht: 1200px) {
+  section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .work-list {
@@ -151,10 +157,22 @@ header > .container {
   padding-bottom: 24px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-container {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -639,18 +657,18 @@ header > .container {
 
 @media screen and (max-width: 767px) {
   .card_item {
-    width: calc((100% - 30px) / 1);
+    width: calc((100% - 15px) / 1);
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .card_item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .card_item {
-    width: calc((100% - 120px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -667,19 +685,15 @@ header > .container {
 .card__title {
   margin-top: 30px;
   color: #212121;
-  width: 270px;
   height: 16px;
-  text-align: left;
-  /* @media screen and (max-width:767px) {
-       width: 450px;
-       text-align: center;
-     }
-  @media screen and (min-width:768px) {
-      width: 354px;
+  /* text-align: left;*/
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .card__title {
+    text-align: left;
+    width: 270px;
   }
-  @media screen and (min-width:1200px) {
-      width: 270px;
-     } */
 }
 
 .card__text {
@@ -714,7 +728,7 @@ header > .container {
   justify-content: center;
   letter-spacing: 0.03em;
 }
-@media screen {
+@media screen and (max-width: 767px) {
   .title {
     font-size: 28px;
   }
@@ -783,11 +797,10 @@ header > .container {
 
 .workers {
   background: #FFFFFF;
-  /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   /**/
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -1265,6 +1278,8 @@ header > .container {
 
 .showcase__product {
   width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 @media screen and (min-width: 768px) {
   .showcase__product {
@@ -1343,6 +1358,12 @@ header > .container {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-widht: 1199px) {
+  .modal {
+    max-width: 450px;
+    max-height: 609px;
+  }
 }
 
 .modal-btn {
