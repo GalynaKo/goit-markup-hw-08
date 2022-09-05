@@ -10,15 +10,22 @@ header>.container {
     /*выравнивание на один уровень*/
    /*position: relative;*/
    @media screen and(min-widht:768px) {
-    justify-content: space-between;
+   
    }
 
 }
+.header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
 .header-container{
-    @media screen  and( max-width:767px){
+    @media screen  and( min-width:768px){
         padding-top: 16px;
         padding-bottom: 16px;
+       
     }
+    
 }
 
 .header__navigation {
@@ -30,14 +37,36 @@ header>.container {
   } 
 
 }
+.header__connect{
+    @media screen and(max-width:1199px){
+        margin-left: 51px;
+    }
+ @media screen and(min-width:1200px) {
+     margin-left: 290px;
+ }
+
+}
+.header__navigation>li:not(:last-child) {
+    margin-right: 50px;
+
+
+
+}
 .menu-open{
-    margin-left: auto;
+  margin-left: auto;
     
   padding: 0;      
- border: none;
- background-color: transparent;
- width: 100%;
- height: 100%;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  transition-duration: 250ms;
+    transition-timing-function:
+     cubic-bezier(0.4, 0, 0.2, 1);
+ @media screen and(min-width:768px) {
+        display: none;
+    }
+  
 }
 .mob-menu{
     position: fixed;
@@ -46,9 +75,7 @@ header>.container {
     height: 100vw;
     background-color: #ffffff;
     top: 0;
-    transition-duration: 250ms;
-        
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
     /*padding-top: 48px;
     padding-bottom: 48px;*/
     > .container{
@@ -175,7 +202,7 @@ display: block;
    
 
 }
-.menu{
+/*.menu{
   display: inline-flex; 
   margin: 0;
   padding: 0;
@@ -186,8 +213,8 @@ display: block;
   @media screen and(min-width:768px){
     display: none;
   }
-}
-/**.menu.menu-icon_cross{
+}*/
+.mob-menu.menu-icon_cross{
     display: none;
 }
 .mob-menu.is-open .menu-icon_cross{
@@ -200,7 +227,7 @@ display: block;
 .menu-icon_cross{
     position: absolute;
     
-}*/
+}
 .menu-container{
    
 
@@ -269,45 +296,30 @@ display: block;
 .menu__soc>li:not(:last-child){
   margin-right: 20px;
 }
-.header-container {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
 
-.header__navigation>li:not(:last-child) {
-    margin-right: 50px;
-
-
-
-}
 .conect{
     @media screen and (min-widht:768px){
-    display: flex;
+       display: -webkit-box;
+        display: flex;
         margin-left: auto;
+        margin-right: 0;
         justify-content: center;
         gap: 6px;
         flex-direction: column;
     }
-   
+   @media screen  and (min-width: 1200px) {
+
+       display: flex;
+       gap: 50px;
+       margin-left: auto;
+
+       flex-direction: row;
+   }
 }
-.header__connect {
-    display: flex;
-    margin-left: auto;
-    justify-content: center;
-    gap: 6px;
-    flex-direction: column;
-    /*align-items: center;*/
+
    
-  @media screen and (min-width: 768px) 
-  and (min-width: 1200px)  {
-        
-        display: flex;
-        gap: 50px;
-        margin-left: auto;
-        
-        flex-direction: row;
-    }
-}
+  
+
 
 /*.navigation .logo{
     color: #000000;
