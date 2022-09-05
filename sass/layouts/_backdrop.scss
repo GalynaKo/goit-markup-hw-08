@@ -15,6 +15,8 @@
     @media screen and(max-width:767px){
         
         padding: 94px 15px;
+        min-width: 450px;
+        min-height: 609px;
         
         /*overflow-y: scroll;*/
     }
@@ -26,6 +28,8 @@
         }*/
         @media screen and(min-width:768px) {
             padding: 207px 159px;
+            min-width: 450px;
+            min-height: 609px;
         }    
 }
 
