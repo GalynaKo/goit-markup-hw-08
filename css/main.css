@@ -56,7 +56,7 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (mins-widht: 1200px) {
+@media screen and (min-widht: 1200px) {
   section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -487,6 +487,15 @@ header > .container {
   color: var(--accent-color);
 }
 
+@media screen and (max-widht: 1199px) {
+  .header__contact {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16em;
+    letter-spacing: 0.02em;
+  }
+}
+
 .header__contact:hover,
 .header__contact:focus {
   color: var(--accent-color);
@@ -764,9 +773,11 @@ header > .container {
   justify-content: center;
   letter-spacing: 0.03em;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .title {
     font-size: 28px;
+    line-height: 1.178em;
+    margin-bottom: 30px;
   }
 }
 
@@ -1253,6 +1264,11 @@ header > .container {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) {
+  .showcase__list {
+    margin-top: 30px;
+  }
+}
 
 .showcase__img {
   position: relative;
@@ -1314,17 +1330,15 @@ header > .container {
 
 .showcase__product {
   width: 100%;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 @media screen and (min-width: 768px) {
   .showcase__product {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .showcase__product {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -1364,21 +1378,11 @@ header > .container {
        left: 50%;
        transform: translate(-50%, -50%);
    }*/
-}
-@media screen and (max-width: 767px) {
-  .backdrop {
-    padding: 94px 15px;
-    min-width: 450px;
-    min-height: 609px;
-    /*overflow-y: scroll;*/
-  }
-}
-@media screen and (min-width: 768px) {
-  .backdrop {
-    padding: 207px 159px;
-    min-width: 450px;
-    min-height: 609px;
-  }
+  /* @media screen and(min-width:768px) {
+       padding: 207px 159px;
+       min-width: 450px;
+       min-height: 609px;
+   }    */
 }
 
 .backdrop.is-hidden .modal {
@@ -1401,8 +1405,8 @@ header > .container {
 }
 @media screen and (max-widht: 1199px) {
   .modal {
-    max-width: 450px;
-    max-height: 609px;
+    width: 450px;
+    height: 609px;
   }
 }
 

@@ -356,7 +356,16 @@ header>.container {
     position: relative;
     color: var(--accent-color);
 }
-
+.header__contact{
+    @media screen and(max-widht:1199px) {
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 1.16em;
+     letter-spacing: 0.02em;
+        
+            
+    }
+}
 .header__contact:hover,
 .header__contact:focus {
     color: var(--accent-color);
