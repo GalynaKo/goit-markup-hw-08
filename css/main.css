@@ -56,7 +56,7 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -588,21 +588,27 @@ header > .container {
   color: #000000;
 }
 
+/*.hero>section {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}*/
 .hero {
   background-color: #2F303A;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/bg-mobile-min.jpg), url(../images/bg-mobile2x-min.jpg);
   max-width: 100%;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-mobile2x-min.jpg), url(../images/bg-mobile-min.jpg);
   /* display: block;
    height: auto;
    margin: 0 auto;*/
 }
 @media (min-device-pixel-radio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/bg-mobile-min.jpg), url(../images/bg-mobile2x-min.jpg);
+    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/bg-mobile2x-min.jpg), url(../images/bg-mobile-min.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -619,12 +625,12 @@ header > .container {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/bg-hero.jpg) url(../images/bg-desktop@2x-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-desktop@2x-min.jpg), url(../images/bg-hero.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-radio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/bg-desktop@2x-min.jpg) url(../images/bg-hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-desktop@2x-min.jpg) url(../images/bg-hero.jpg);
   }
 }
 
@@ -1403,7 +1409,7 @@ header > .container {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (max-widht: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
