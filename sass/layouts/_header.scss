@@ -425,7 +425,7 @@ header>.container {
       border-radius: 2px;   
     }
 }
-
+.header__contact:focus,
 .header__contact:hover .header__icon {
     fill: #2196F3;
 }
@@ -439,6 +439,11 @@ header>.container {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(max-width:1199px){
+        font-size: 12px;
+       line-height: 1.66em;
+    }
 }
 
 .header__icon {

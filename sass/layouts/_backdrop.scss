@@ -256,6 +256,10 @@ textarea::placeholder {
 .form-check-text {
     font-weight: 400;
     font-size: 14px;
+    @media screen and(max-width:1199px) {
+     font-size: 12px;
+     
+    }
 }
 
 .form-check-text span {
@@ -269,6 +273,8 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+
+   
 
 }
 
@@ -310,6 +316,7 @@ textarea::placeholder {
 
 .check-text {
     color: var(--accent-color);
+    
 
 }
 
