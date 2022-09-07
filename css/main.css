@@ -1183,7 +1183,7 @@ header > .container {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .join-action-btn {
     margin-top: 20px;
     margin-left: auto;
@@ -1231,12 +1231,14 @@ header > .container {
   .showcase__menu {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
   .showcase__menu {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 
